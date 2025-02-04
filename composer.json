@@ -1,0 +1,18 @@
+{
+    "name": "joharshakil/my-users-plugin",
+    "description": "A WordPress plugin for displaying users from a third-party API.",
+    "type": "wordpress-plugin",
+    "require": {
+        "php": ">=8.0",
+        "symfony/cache": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyUsersPlugin\\": "includes/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "brain/monkey": "^2.0"
+    }
+}

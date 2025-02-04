@@ -1,0 +1,41 @@
+.user-listing-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-listing-container th,.user-listing-container td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.user-listing-container th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.user-listing-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-listing-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-listing-container td {
+    transition: background 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .user-listing-container table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
